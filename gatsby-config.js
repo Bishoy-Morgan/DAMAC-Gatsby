@@ -18,18 +18,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
-        name: `features`,
+        name: `o`,
         // Path to the directory
-        path: `${__dirname}/src/markdown/features`,
+        path: `${__dirname}/src/markdown/o`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
-        name: `offers`,
+        name: `f`,
         // Path to the directory
-        path: `${__dirname}/src/markdown/offers`,
+        path: `${__dirname}/src/markdown/f`,
       },
     },
     {

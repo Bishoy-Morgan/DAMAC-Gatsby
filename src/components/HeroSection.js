@@ -6,20 +6,20 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function HeroSection() {
     const data = useStaticQuery(graphql`
         query MyQuery {
-            allFile(filter: {sourceInstanceName: {eq: "offers"}}) {
-                nodes {
-                childMarkdownRemark {
-                    frontmatter {
-                    title
-                    percentage
-                    }
-                }
-                }
-            }
-            }
-        `)
+  allFile(filter: {sourceInstanceName: {eq: "o"}}) {
+    nodes {
+      childMarkdownRemark {
+        frontmatter {
+          title
+          percentage
+        }
+      }
+    }
+  }
+}
+`)
+    console.log(data)
     let markData = data.allFile.nodes
-    console.log(markData)
     return (
         <section className='main-section relative w-full h-screen'>
             <StaticImage
@@ -29,21 +29,21 @@ export default function HeroSection() {
                 formats={["auto", "webp", "avif"]}
                 loading='eager'
                 placeholder='blurred'
-                />
+            />
             <section className='absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 w-4/5 h-3/5 flex justify-between items-start text-[#FCFCFC]'>
                 <div className='w-1/2 h-full flex flex-col justify-between items-start'>
                     <h2 className='main-title text-5xl font-medium leading-[62.4px] uppercase'>Harbour Lights<br />de <span className='text-[#17ABFF]'>GRESOGONO</span></h2>
-                    <span className='text-[25px] font-bold leading-[33px] -mt-10'>1, 2 & 3 Bedrooms Seaside Apartments<br/> in Dubai Maritime City</span>
+                    <span className='text-[25px] font-bold leading-[33px] -mt-10'>1, 2 & 3 Bedrooms Seaside Apartments<br /> in Dubai Maritime City</span>
                     <div className='w-4/5 min-h-24 flex flex-col justify-between'>
-                    {markData?.map((i, key) => {
-                        return (
-                            <Offers 
-                                key={key}
-                                offerName={i?.childMarkdownRemark?.frontmatter?.title} 
-                                offerPercent={i?.childMarkdownRemark?.frontmatter?.percentage}
-                            />
-                        )
-                    })}
+                        {markData?.map((i, key) => {
+                            return (
+                                <Offers
+                                    key={key}
+                                    offerName={i?.childMarkdownRemark?.frontmatter?.title}
+                                    offerPercent={i?.childMarkdownRemark?.frontmatter?.percentage}
+                                />
+                            )
+                        })}
                     </div>
                 </div>
                 <div className='w-[306px] h-80 bg-[#5790BE1F] backdrop-blur-md rounded-[14px] flex flex-col justify-between'>
