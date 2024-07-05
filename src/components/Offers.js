@@ -6,7 +6,7 @@ export default function Offers( { offerName, offerPercent } ) {
             <span 
                 className='text-sm px-4'>{offerName}
                 <span 
-                    className='text-base font-semibold'> {offerPercent}</span>
+                    className='text-base font-semibold'> {offerPercent} {'%**'}</span>
             </span>
         </div>
     )

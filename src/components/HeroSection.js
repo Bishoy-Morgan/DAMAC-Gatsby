@@ -1,12 +1,29 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 import Offers from './Offers'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function HeroSection() {
+    const data = useStaticQuery(graphql`
+        query MyQuery {
+            allFile(filter: {sourceInstanceName: {eq: "offers"}}) {
+                nodes {
+                childMarkdownRemark {
+                    frontmatter {
+                    title
+                    percentage
+                    }
+                }
+                }
+            }
+            }
+        `)
+    let markData = data.allFile.nodes
+    console.log(markData)
     return (
         <section className='main-section relative w-full h-screen'>
             <StaticImage
-                src='../Images/Rectangle 108.png'
+                src='../Images/Rectangle.png'
                 alt='DAMAC property in Dubai Marintime City'
                 layout="fullWidth"
                 formats={["auto", "webp", "avif"]}
@@ -18,8 +35,15 @@ export default function HeroSection() {
                     <h2 className='main-title text-5xl font-medium leading-[62.4px] uppercase'>Harbour Lights<br />de <span className='text-[#17ABFF]'>GRESOGONO</span></h2>
                     <span className='text-[25px] font-bold leading-[33px] -mt-10'>1, 2 & 3 Bedrooms Seaside Apartments<br/> in Dubai Maritime City</span>
                     <div className='w-4/5 min-h-24 flex flex-col justify-between'>
-                        <Offers offerName={'Rental Returns of'} offerPercent={'UPTO 11%**'}/>
-                        <Offers offerName={'Capital Appreciation of'} offerPercent={'UPTO 32%**'}/>
+                    {markData?.map((i, key) => {
+                        return (
+                            <Offers 
+                                key={key}
+                                offerName={i?.childMarkdownRemark?.frontmatter?.title} 
+                                offerPercent={i?.childMarkdownRemark?.frontmatter?.percentage}
+                            />
+                        )
+                    })}
                     </div>
                 </div>
                 <div className='w-[306px] h-80 bg-[#5790BE1F] backdrop-blur-md rounded-[14px] flex flex-col justify-between'>

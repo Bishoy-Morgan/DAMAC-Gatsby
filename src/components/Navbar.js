@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className='absolute z-50 top-0 left-0 w-full min-h-20 flex justify-center items-center'>
             <div className='w-4/5 h-full flex justify-between items-center'>
                 <StaticImage 
-                    src='../Images/Logo.png'
+                    src='../Images/Damac.png'
                     alt='DAMAC Logo'
                     layout='fixed'
                     width={165.84}
