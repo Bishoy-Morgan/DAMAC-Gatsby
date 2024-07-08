@@ -41,5 +41,23 @@ module.exports = {
         path: `${__dirname}/src/Images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `amenities`,
+        // Path to the directory
+        path: `${__dirname}/src/markdown/amenities`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `gallery`,
+        // Path to the directory
+        path: `${__dirname}/src/markdown/gallery`,
+      },
+    },
   ],
 }

@@ -1,40 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Offers from './Offers'
 import { StaticImage } from 'gatsby-plugin-image'
 
 export default function HeroSection() {
+    // const [mobileView, setMobileView] = useState(false)
     const data = useStaticQuery(graphql`
         query MyQuery {
-  allFile(filter: {sourceInstanceName: {eq: "o"}}) {
-    nodes {
-      childMarkdownRemark {
-        frontmatter {
-          title
-          percentage
-        }
-      }
-    }
-  }
-}
-`)
+            allFile(filter: {sourceInstanceName: {eq: "o"}}) {
+                nodes {
+                childMarkdownRemark {
+                    frontmatter {
+                    title
+                    percentage
+                    }
+                }
+                }
+            }
+            }
+        `)
     console.log(data)
     let markData = data.allFile.nodes
     return (
         <section className='main-section relative w-full h-screen'>
-            <StaticImage
-                src='../Images/Rectangle.png'
-                alt='DAMAC property in Dubai Marintime City'
-                layout="fullWidth"
-                formats={["auto", "webp", "avif"]}
-                loading='eager'
-                placeholder='blurred'
-            />
-            <section className='absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 w-4/5 h-3/5 flex justify-between items-start text-[#FCFCFC]'>
-                <div className='w-1/2 h-full flex flex-col justify-between items-start'>
-                    <h2 className='main-title text-5xl font-medium leading-[62.4px] uppercase'>Harbour Lights<br />de <span className='text-[#17ABFF]'>GRESOGONO</span></h2>
-                    <span className='text-[25px] font-bold leading-[33px] -mt-10'>1, 2 & 3 Bedrooms Seaside Apartments<br /> in Dubai Maritime City</span>
-                    <div className='w-4/5 min-h-24 flex flex-col justify-between'>
+                <StaticImage
+                className='max-sm:hidden md:block'
+                    src='../Images/Rectangle.png'
+                    alt='DAMAC property in Dubai Marintime City'
+                    layout="fullWidth"
+                    formats={["auto", "webp", "avif"]}
+                    loading='eager'
+                    placeholder='blurred'
+                />
+                <StaticImage
+                className='md:hidden block'
+                    src='../Images/Rectangle Mobile-view.png'
+                    alt='DAMAC property in Dubai Marintime City'
+                    layout="fullWidth"
+                    formats={["auto", "webp", "avif"]}
+                    loading='eager'
+                    placeholder='blurred'
+                />
+            <section className='absolute z-50 top-10 left-5 md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/3 w-[85%] md:w-4/5 h-[85%] md:h-3/5 flex flex-col md:flex-row justify-evenly md:justify-between items-start text-[#FCFCFC]'>
+                <div className='w-full h-auto md:w-1/2 md:h-full flex flex-col justify-between items-start'>
+                    <h2 className='main-title text-[37px] md:text-5xl font-medium leading-10 md:leading-[62.4px] uppercase'>Harbour Lights<br />de <span className='text-[#17ABFF]'>GRESOGONO</span></h2>
+                    <span className='text-[14px] md:text-[25px] font-bold md:leading-[33px] my-5 md:-mt-10'>1, 2 & 3 Bedrooms Seaside Apartments<br /> in Dubai Maritime City</span>
+                    <div className='w-full md:w-4/5 min-h-24 flex flex-col justify-between'>
                         {markData?.map((i, key) => {
                             return (
                                 <Offers
@@ -46,7 +57,7 @@ export default function HeroSection() {
                         })}
                     </div>
                 </div>
-                <div className='w-[306px] h-80 bg-[#5790BE1F] backdrop-blur-md rounded-[14px] flex flex-col justify-between'>
+                <div className='w-[95%] md:w-[306px] h-80 bg-[#5790BE1F] backdrop-blur-md rounded-[14px] flex flex-col justify-between'>
                     <div className='w-full h-4/5 px-5 text-[#FCFCFC] flex flex-col justify-center items-center shadow-sm shadow-black/50'>
                         <div className='w-full h-3/5'>
                             <span className='uppercase text-[13px] tracking-[2px] font-normal'>pricing starts from</span>
