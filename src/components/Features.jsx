@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export default function Features() {
     const data = useStaticQuery(graphql`
-      query MyQuery2 {
+      query features {
             allFile(filter: {sourceInstanceName: {eq: "f"}}) {
               nodes {
                 childMarkdownRemark {
@@ -39,7 +39,7 @@ export default function Features() {
                                 <GatsbyImage
                                   image={image}
                                   alt='Feature Image'
-                                  />
+                                />
                                 <span className='text-[12px] md:text-base font-normal mt-3'>{item.childMarkdownRemark.frontmatter.feature}</span>
                                 <span className='main-title text-[25px] md:text-3xl font-medium'>{item.childMarkdownRemark.frontmatter.offer}</span>
                             </div>

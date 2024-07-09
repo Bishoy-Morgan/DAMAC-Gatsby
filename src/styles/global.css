@@ -50,3 +50,20 @@ body {
 .amenities {
     box-shadow: 0px 14px 34px -10px #7E7E7E59;
 }
+
+.payment {
+    background: linear-gradient(180deg, #0E0018 -15.61%, #00357B 85.33%);
+
+}
+
+@media only screen and (max-width: 680px) {
+    .payment {
+        background: #00357B;
+    }
+}
+
+.floorPlan {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #C5DCF1 100%);
+
+}
+
