@@ -21,9 +21,9 @@ export default function HeroSection() {
     // console.log(data)
     let markData = data.allFile.nodes
     return (
-        <section className='main-section relative w-full bg-gray-400 h-[720px] md:h-screen'>
+        <section className='main-section relative w-full h-[720px] md:h-screen'>
                 <StaticImage
-                className='max-sm:hidden md:block h-full'
+                className='absolute top-0 left-0 w-full h-full hidden md:block'
                     src='../Images/Rectangle.png'
                     alt='DAMAC property in Dubai Marintime City'
                     layout="fullWidth"
@@ -32,7 +32,7 @@ export default function HeroSection() {
                     placeholder='blurred'
                 />
                 <StaticImage
-                className='mobile-img border-red-600 h-full'
+                className='absolute top-0 left-0 w-full h-full block md:hidden'
                     src='../Images/Rectangle Mobile-view.png'
                     alt='DAMAC property in Dubai Marintime City'
                     layout="fullWidth"
@@ -40,7 +40,7 @@ export default function HeroSection() {
                     loading='eager'
                     placeholder='blurred'
                 />
-            <section className='absolute z-50 top-20 left-1/2 md:left-1/2 md:top-1/2 -translate-x-1/2 md:-translate-y-[40%] lg:-translate-y-1/3 w-[90%] md:w-4/5 h-[85%] md:h-3/4 lg:h-3/5 flex flex-col md:flex-row justify-between items-start text-[#FCFCFC]'>
+            <section className='absolute z-50 top-20 left-1/2 md:left-1/2 md:top-1/2 -translate-x-1/2 md:-translate-y-[40%] lg:-translate-y-1/3 w-[90%] md:w-4/5 h-[85%] md:h-[70%] lg:h-3/5 flex flex-col md:flex-row justify-between items-start text-[#FCFCFC]'>
                 <div className='w-full h-[42%] md:w-1/2 md:h-full flex flex-col justify-between items-start '>
                     <h2 className='main-title text-[37px] md:text-5xl font-medium leading-10 md:leading-[62.4px] uppercase'>Harbour Lights<br />de <span className='text-[#17ABFF]'>GRESOGONO</span></h2>
                     <span className='text-[14px] md:text-[25px] font-bold md:leading-[33px] md:-mt-10'>1, 2 & 3 Bedrooms Seaside Apartments<br /> in Dubai Maritime City</span>

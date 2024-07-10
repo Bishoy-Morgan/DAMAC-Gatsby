@@ -30,13 +30,13 @@ export default function Features() {
     let featuresData = data?.allFile?.nodes
     return (
         <div className='w-full h-48 bg-[#F4F9FF] flex justify-center items-center'>
-            <div className='w-full md:w-3/4 overflow-x-auto h-full flex flex-col justify-center md:pt-5 border-2 border-black'>
+            <div className='w-full md:w-3/4 overflow-x-auto h-full flex flex-col justify-center md:pt-5 '>
                 <div className='w-[360px] h-[140px] md:w-full flex justify-around items-center'>
                     {featuresData.map((item, key) => {
                         const image = getImage(item.childMarkdownRemark.frontmatter.featureImg)
                         console.log(image)
                         return (
-                            <div className='h-full bg-red-300'>
+                            <div className='h-full'>
                               <div key={key} className='w-[150px] h-full flex flex-col items-center justify-center text-[#00357B] uppercase '>
                                 <GatsbyImage
                                   image={image}
@@ -49,7 +49,7 @@ export default function Features() {
                         )
                     })}
                 </div>
-                <div className='w-[600px] border-2 border-black md:w-full h-[10%] flex justify-around items-center'>
+                <div className='w-[600px] md:w-full h-[10%] flex justify-around items-center'>
                     <div className='w-[73px] h-[5px] bg-[#00357B] opacity-[12%] rounded-[13px]'></div>
                     <div className='w-[73px] h-[5px] bg-[#00357B] opacity-[12%] rounded-[13px]'></div>
                     <div className='w-[73px] h-[5px] bg-[#00357B] opacity-[12%] rounded-[13px]'></div>

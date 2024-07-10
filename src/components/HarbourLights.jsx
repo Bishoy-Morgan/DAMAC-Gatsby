@@ -30,7 +30,7 @@ export default function HarbourLights() {
         let amenitiesData = data.allFile.nodes
     return (
         <>
-            <section className='w-4/5 h-svh mx-auto -mt-10 md:mt-0 pt-0 md:pt-8 flex flex-col justify-evenly items-center'>
+            <section className='border-4 border-black w-4/5 h-screen py-10 mx-auto md:pt-8 flex flex-col justify-evenly items-center'>
                 <StaticImage
                     src='../Images/HarbourLights.png' 
                     alt='Harbour-Lights Logo'

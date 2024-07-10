@@ -41,13 +41,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .mobile-img {
-        display: none;
-    }
-}
-
-
 .main-title {
     font-family: "Oswald", sans-serif;
 }
