@@ -2,29 +2,32 @@ import React from 'react'
 
 export default function Location() {
     return (
-        <section className='w-full h-[850px] flex flex-col justify-evenly items-center pb-8 '>
-            <div className='w-3/5 h-[18%] flex flex-col justify-evenly items-center '>
+        <section className='w-full h-[1300px] md:h-[850px] pt-5 md;pt-0 flex flex-col justify-between md:justify-evenly items-center pb-8 '>
+            <div className='w-[90%] md:w-3/5 h-[18%] flex flex-col justify-evenly items-center '>
                 <h4 className='main-title text-[#004572] text-4xl font-medium uppercase  '>location</h4>
                 <p className='text-base leading-[24px] text-[#343434] text-center '>Strategically located between Port Rashid and Dubai’s Drydocks World, Dubai Maritime City capitalises on its strengths, bringing together the entire maritime industry and offering residents a dynamic, urban lifestyle. KNOW MORE</p>
             </div>
-            <div className='w-4/5 h-[52%] rounded-[14px] border border-black'>
+            <div className='w-[90%] md:w-4/5 h-1/5 md:h-[52%] rounded-[14px]'>
+                <iframe 
+                    className='w-full h-full rounded-[14px]'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.958973153104!2d55.266061074156525!3d25.271965528670545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43142458cfa5%3A0xb76489680228dc08!2sDamac%20Harbour%20Lights!5e0!3m2!1sen!2seg!4v1720588007443!5m2!1sen!2seg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div className='w-4/5 h-1/5 p-3 rounded-[14px] bg-[#00357B] flex justify-evenly items-center border-2 border-black'>
-                <div className='w-[24%] h-full'>
+            <div className='w-[90%] md:w-4/5 h-[55%] md:h-1/5 p-3 rounded-[14px] bg-[#00357B] flex flex-col md:flex-row justify-evenly items-center'>
+                <div className='w-[88%] md:w-[24%] h-[23%] md:h-full'>
                     <h4 className='uppercase inline text-[29px] font-medium text-[#FCFCFC]'>Famous Landmarks Nearby</h4>
-                    <svg className='inline mb-3 ml-3' width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className='inline mb-3 ml-3 rotate-90 md:rotate-0' width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="15" cy="15" r="15" fill="#5790BE"/>
                         <path d="M7.53674 15.0007H22.4632M22.4632 15.0007L16.0662 8.82422M22.4632 15.0007L16.0662 21.1772" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div className='w-[24%] h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
+                <div className='w-[90%] md:w-[24%] h-[23%] md:h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
                     <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.66648 29.5116L8.11233 28.9853L7.52934 28.6166L1.13532 24.5735L2.28267 23.595C2.3273 23.5675 2.37688 23.5488 2.42873 23.54C2.48807 23.5299 2.54891 23.533 2.60688 23.5492L2.63706 23.5576L2.66796 23.5628L10.6849 24.9187L11.0064 24.9731L11.2269 24.7329L17.8709 17.4957L18.3417 16.9829L17.7651 16.5929L2.26499 6.11076L4.18745 4.59764L24.2326 10.2353L24.5839 10.3341L24.8332 10.0676L30.8198 3.66724C32.7929 1.96658 34.5338 1.35211 35.7271 1.66223L35.7742 1.67446L35.8226 1.67896C36.0264 1.69785 36.2187 1.7814 36.3716 1.91742C36.5245 2.05343 36.6299 2.23477 36.6724 2.43494L36.6788 2.46504L36.6883 2.49434C37.0764 3.69898 36.4993 5.50755 34.7242 7.57215L28.3241 13.5585L28.0576 13.8078L28.1564 14.1591L33.7933 34.2014L32.2665 36.1098L21.7988 20.6351L21.4078 20.057L20.8949 20.5303L13.6577 27.2082L13.4188 27.4286L13.4729 27.7491L14.8289 35.7745L14.8326 35.7965L14.8379 35.8181C14.8511 35.8716 14.8528 35.9272 14.843 35.9814C14.8347 36.0275 14.8182 36.0716 14.7943 36.1118L13.8182 37.2565L9.77491 30.8705L9.40868 30.2921L8.8833 30.7311C7.78727 31.6467 6.87128 32.194 6.03373 32.355C6.1906 31.5139 6.73861 30.6069 7.66648 29.5116Z" stroke="#FCFCFC" stroke-width="1.2"/>
                     </svg>
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Dubail Airport</span>
                     <span className='main-title text-[23px] font-bold text-[#FCFCFC]'>25-Minutes</span>
                 </div>
-                <div className='w-[24%] h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
+                <div className='w-[90%] md:w-[24%] h-[23%] md:h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
                     <svg width="39" height="37" viewBox="0 0 39 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.67 12.3331C19.8867 12.3331 20.1034 12.256 20.2684 12.1004C20.42 11.9462 20.5034 11.7612 20.5034 11.5608C20.5034 11.3604 20.4218 11.1754 20.2534 11.0058C19.9384 10.7298 19.42 10.7144 19.07 11.0211C18.92 11.1769 18.8367 11.3619 18.8367 11.5623C18.8367 11.7627 18.92 11.9477 19.07 12.1019C19.2367 12.256 19.4534 12.3331 19.67 12.3331Z" fill="#FCFCFC"/>
                         <path d="M18.8367 18.4997H20.5033C20.9633 18.4997 21.3367 18.1544 21.3367 17.7289C21.3367 17.3034 20.9633 16.958 20.5033 16.958H18.8367C18.3767 16.958 18.0033 17.3034 18.0033 17.7289C18.0033 18.1544 18.3767 18.4997 18.8367 18.4997Z" fill="#FCFCFC"/>
@@ -35,7 +38,7 @@ export default function Location() {
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Downtown Dubai</span>
                     <span className='main-title text-[23px] font-bold text-[#FCFCFC]'>20-Minutes</span>
                 </div>
-                <div className='w-[24%] h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
+                <div className='w-[90%] md:w-[24%] h-[23%] md:h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
                     <svg width="47" height="39" viewBox="0 0 47 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.6845 34.5361H10.9349C10.8965 34.5363 10.8584 34.5436 10.823 34.5578C10.7875 34.5719 10.7553 34.5925 10.7283 34.6184C10.7012 34.6443 10.6798 34.675 10.6652 34.7088C10.6507 34.7426 10.6433 34.7787 10.6435 34.8152V35.3728C10.6435 35.5263 10.7739 35.65 10.9349 35.65H12.6845C12.8442 35.65 12.976 35.5263 12.976 35.3728V34.8152C12.9761 34.7416 12.9456 34.6709 12.8909 34.6186C12.8363 34.5663 12.7621 34.5366 12.6845 34.5361Z" fill="#FCFCFC"/>
                         <path d="M16.1829 34.5361H14.4334C14.3949 34.5363 14.3569 34.5436 14.3214 34.5578C14.286 34.5719 14.2538 34.5925 14.2267 34.6184C14.1996 34.6443 14.1782 34.675 14.1637 34.7088C14.1491 34.7426 14.1417 34.7787 14.1419 34.8152V35.3728C14.1419 35.5263 14.2723 35.65 14.4334 35.65H16.1829C16.3427 35.65 16.4744 35.5263 16.4744 35.3728V34.8152C16.4746 34.7416 16.444 34.6709 16.3894 34.6186C16.3347 34.5663 16.2605 34.5366 16.1829 34.5361Z" fill="#FCFCFC"/>
