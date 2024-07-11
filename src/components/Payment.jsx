@@ -3,10 +3,10 @@ import React from 'react'
 
 export default function Payment() {
     return (
-      <section className='w-full h-screen mt-10 md:mt-5'>
-        <div className='payment relative mx-auto w-[90%] md:w-4/5 h-[85%] rounded-[14px]'>
+      <section className='w-full h-screen flex justify-center items-center '>
+        <div className='payment relative mx-auto w-[90%] md:w-4/5 h-[90%] rounded-[14px]'>
           <StaticImage
-            className='max-md:hidden absolute bottom-0 right-0 rounded-br-[14px]'
+            className='hidden md:block absolute bottom-0 right-0 rounded-br-[14px]'
             src='../Images/payment.png'
             alt='Visa Card'
             width={450}
@@ -42,7 +42,7 @@ export default function Payment() {
                 <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-[3%] text-[#FCFCFC] '>After<br/>completion</span>
               </div>
             </div>
-            <div className='w-full h-[18%] md:h-[12%] flex flex-col md:flex-row justify-between md:items-start'>
+            <div className='w-full h-[15%] md:h-[12%] flex flex-col lg:flex-row justify-between md:items-start '>
               <span className='text-[#E0E0E0] text-[13px] pl-1 md:pl-5'>*DLD - Dubai Land Department <br/>4% - registration fee</span>
               <button className='text-[#FFFFFF] bg-[#17ABFF] font-bold text-[13px] rounded-[5px] uppercase w-[90%] md:w-[248px] h-12 mx-auto md:mx-0'>GET DETAILED CALCULATION</button>
             </div>

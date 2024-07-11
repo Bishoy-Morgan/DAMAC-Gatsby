@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function Floor() {
     return (
-        <section className='floorPlan w-full h-screen -mt-20 md:mt-0 md:pt-5 '>
-            <div className='w-[90%] md:w-4/5 h-full mx-auto flex flex-col justify-start items-center '>
-                <div className='w-full md:w-[90%] h-1/5 flex flex-col justify-between items-center '>
+        <section className='floorPlan w-full h-screen md:mt-0 md:pt-5 '>
+            <div className='w-[90%] md:w-4/5 h-full mx-auto flex flex-col justify-start items-center  '>
+                <div className='w-full md:w-[90%] h-[16%] md:h-1/5 flex flex-col justify-between items-center'>
                     <h3 className='main-title uppercase text-4xl font-medium text-[#00357B] text-center '>Floor Plans of ALL UNITS</h3>
-                    <div className='w-full h-2/5 border-[#00357B] md:border-b-[.7px]'>
+                    <div className='w-full h-[35%] lg:h-2/5 border-[#00357B] md:border-b-[.7px] '>
                         <button className='block md:hidden mx-auto bg-[#00357B] rounded-[5px] w-3/5 h-12 text-[#FCFCFC] text-[13px] font-bold  '>Choose a Bedroom
                             <svg className='inline-block ml-2' width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.07461 1.16879L5.57865 5.54914C5.24701 5.94976 4.73583 5.94976 4.4179 5.54914L0.921936 1.16879C0.590293 0.754017 0.756114 0.436523 1.26729 0.436523H8.72926C9.25459 0.436523 9.40626 0.754459 9.07461 1.16879Z" fill="#FCFCFC"/>

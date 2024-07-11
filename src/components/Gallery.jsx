@@ -1,6 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import rightArrow from '../Images/icons/galleryRight.svg'
+import leftArrow from '../Images/icons/galleryLeft.svg'
 
 export default function Gallery() {
     const data = useStaticQuery(graphql`
@@ -23,12 +25,22 @@ export default function Gallery() {
     const galleryData = data.allFile.nodes
     const image = galleryData.map((img) => getImage(img.childMarkdownRemark.frontmatter.galleryImage))
     return (
-        <section className='w-full h-[350px] md:h-screen md:mt-10 md:mb-40'>
-            <div className='w-4/5 py-5 mx-auto flex justify-end'>
+        <section className='w-full h-[480px] md:h-[600px] lg:h-[700px] 2xl:h-[800px] flex flex-col justify-evenly items-center lg:mb-10 '>
+            <div className='w-4/5 h-[15%] xl:h-[10%] flex justify-center items-center md:justify-end'>
                 <button className='w-40 h-12 font-bold text-[13px] bg-[#00357B] text-[#FCFCFC] rounded-[5px] mr-3'>EXTERIORS</button>
                 <button className='w-40 h-12 font-bold text-[13px] border-[#00357B] border text-[#00357B] rounded-[5px] '>INTERIORS</button>
             </div>
-            <div className='w-[98%] md:w-4/5 h-[70%] md:h-full mx-auto flex flex-col justify-between '>
+            <div className='relative w-[98%] lg:w-4/5 h-[70%] lg:h-4/5 2xl:h-[85%] max-h-[500px] md:max-h-[600px] lg:max-h-[700px] 2xl:max-h-none flex flex-col justify-between '>
+                <div className='absolute top-1/3 left-4 w-[98%] h-12 z-50 flex justify-between items-center '>
+                    <div>
+                        <img src={leftArrow}
+                        alt='Arrow' />
+                    </div>
+                    <div>
+                        <img src={rightArrow}
+                        alt='Arrow' />
+                    </div>
+                </div>
                 <div className='w-full h-[73%]'>
                     <GatsbyImage
                         className='w-full h-full rounded-[14px]'
