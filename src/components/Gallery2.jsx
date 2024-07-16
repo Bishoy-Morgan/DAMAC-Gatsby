@@ -6,11 +6,11 @@ import leftArrow from '../Images/icons/galleryLeft.svg'
 import closeBtn from '../Images/icons/close-btn.svg'
 import { disableBodyScroll } from 'body-scroll-lock'
 
-export default function Gallery( { type, setType } ) {
+export default function Gallery2( { type, setType } ) {
     const [openGallery, setOpenGallery] = useState(false)
     const data = useStaticQuery(graphql`
-        query gallery {
-            allFile(filter: {sourceInstanceName: {eq: "gallery"}}) {
+        query gallery2 {
+            allFile(filter: {sourceInstanceName: {eq: "gallery2"}}) {
                 nodes {
                 childMarkdownRemark {
                     frontmatter {

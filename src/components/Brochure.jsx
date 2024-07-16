@@ -8,7 +8,13 @@ export default function Brochure() {
                 <span className='uppercase text-[#17ABFF] text-base md:text-[18px] font-medium '>IN A NUTSHELL</span>
                 <h4 className='main-title uppercase text-[#FCFCFC] text-[31px] md:text-4xl font-medium '>Download Brochure</h4>
                 <p className='text-base font-normal text-[#FCFCFC] leading-[24px] my-5'>Harbour Lights de GRISOGONO Geneve is a residential tower in the heart of Dubai Maritime City. Future residents can choose from a number of 1–3 bedroom branded residences. Certain premises come with a private swimming pool, letting you enjoy resort-like living without the need to leave home</p>
-                <button className='uppercase text-[13px] font-bold text-[#FCFCFC] bg-[#17ABFF] w-4/5 md:w-3/5 h-12 rounded-[5px] '>DOWNLOAD FREE PDF BROCHURE</button>
+                <a 
+                    className='w-4/5 md:w-3/5 h-12 '
+                    href='/sample.pdf' 
+                    download
+                >
+                    <button className='w-full h-12 uppercase text-[13px] font-bold text-[#FCFCFC] bg-[#17ABFF] rounded-[5px] '>DOWNLOAD FREE PDF BROCHURE</button>
+                </a>
             </div>
             <div className='w-full h-1/3 md:h-[45%] lg:w-1/2 lg:h-full rounded-[14px] overflow-hidden '>
                 <StaticImage

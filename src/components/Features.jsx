@@ -36,7 +36,7 @@ export default function Features() {
                 <div className='h-[140px] w-full flex justify-around items-center '>
                     {featuresData.map((item, key) => {
                         const image = getImage(item.childMarkdownRemark.frontmatter.featureImg)
-                        console.log(image)
+                        // console.log(image)
                         return (
                           <div className='h-full'>
                               <div key={key} className='w-[150px] h-full flex flex-col items-center justify-center text-[#00357B] uppercase '>

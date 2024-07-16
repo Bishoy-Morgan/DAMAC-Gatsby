@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
-export default function Payment() {
+export default function Payment( { formOpen } ) {
     return (
       <section className='w-full h-screen flex justify-center items-center '>
         <div className='payment relative mx-auto w-[90%] md:w-4/5 h-[90%] rounded-[14px]'>
@@ -44,7 +44,11 @@ export default function Payment() {
             </div>
             <div className='w-full h-[15%] md:h-[12%] flex flex-col lg:flex-row justify-between md:items-start '>
               <span className='text-[#E0E0E0] text-[13px] pl-1 md:pl-5'>*DLD - Dubai Land Department <br/>4% - registration fee</span>
-              <button className='text-[#FFFFFF] bg-[#17ABFF] font-bold text-[13px] rounded-[5px] uppercase w-[90%] md:w-[248px] h-12 mx-auto md:mx-0'>GET DETAILED CALCULATION</button>
+              <button 
+                className='text-[#FFFFFF] bg-[#17ABFF] font-bold text-[13px] rounded-[5px] uppercase w-[90%] md:w-[248px] h-12 mx-auto md:mx-0'
+                onClick={formOpen}
+              >GET DETAILED CALCULATION</button>
+            
             </div>
           </div>
         </div>
