@@ -4,21 +4,14 @@ import React from 'react'
 export default function Payment( { formOpen } ) {
     return (
       <section className='w-full h-screen flex justify-center items-center '>
-        <div className='payment relative mx-auto w-[90%] md:w-4/5 h-[90%] rounded-[14px]'>
-          <StaticImage
-            className='hidden md:block absolute bottom-0 right-0 rounded-br-[14px]'
-            src='../Images/payment.png'
-            alt='Visa Card'
-            width={450}
-            height={400}
-          />
-          <div className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 md:-translate-x-0 md:-translate-y-0 md:top-3 md:left-10 w-[90%] md:w-[55%] h-full px-2 md:px-0 flex flex-col justify-evenly'>
+        <div className='payment mx-auto w-[90%] md:w-4/5 h-[90%] rounded-[14px] pl-8 flex justify-between items-center lg:items-end'>
+          <div className='w-[90%] lg:w-[55%] h-full px-2 md:px-0 flex flex-col justify-evenly'>
             <h4 className='main-title font-medium text-[31px] md:text-4xl text-[#FCFCFC] md:pl-5 uppercase '>payment plan</h4>
             <div className='w-full h-[65%] bg-[#5790BE]/30 md:bg-transparent border rounded-[14px]'>
               <div className='w-full h-[70%] md:h-[55%] flex flex-col md:flex-row'>
                 <div className='w-full h-2/5 md:w-1/2 md:h-full border-b md:border-b-0 md:border-r pl-5 py-1 md:py-5'>
-                  <h5 className='main-title text-[35px] md:text-[42px] font-medium tracking-[3%] text-[#FCFCFC] '>80%</h5>
-                  <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-[3%] text-[#FCFCFC]'>During the<br/>construction period</span>  
+                  <h5 className='main-title text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC] '>80%</h5>
+                  <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-wide text-[#FCFCFC]'>During the<br/>construction period</span>  
                 </div>
                 <div className='w-full h-3/5 md:w-1/2 md:h-full p-5 '>
                   <div className='w-full h-full flex flex-col '>
@@ -38,8 +31,8 @@ export default function Payment( { formOpen } ) {
                 </div>
               </div>
               <div className='w-full h-[30%] md:h-2/5 border-t pl-5 py-3'>
-                <h5 className='main-title text-[35px] md:text-[42px] font-medium tracking-[3%] text-[#FCFCFC]'>20%</h5>
-                <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-[3%] text-[#FCFCFC] '>After<br/>completion</span>
+                <h5 className='main-title text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC]'>20%</h5>
+                <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-wide text-[#FCFCFC] '>After<br/>completion</span>
               </div>
             </div>
             <div className='w-full h-[15%] md:h-[12%] flex flex-col lg:flex-row justify-between md:items-start '>
@@ -50,6 +43,15 @@ export default function Payment( { formOpen } ) {
               >GET DETAILED CALCULATION</button>
             
             </div>
+          </div>
+          <div className='hidden lg:block lg:w-[45%] lg:h-4/5 '>
+            <StaticImage
+              className='lg:h-full lg:w-full rounded-br-[14px] '
+              src='../Images/payment.png'
+              alt='Visa Card'
+              width={450}
+              height={400}
+            />
           </div>
         </div>
       </section>

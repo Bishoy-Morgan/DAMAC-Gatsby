@@ -78,24 +78,22 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-omni-font-loader`,
       options: {
-        fonts: [
-          `Oswald`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        mode: "async",
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Oswald`,
+            file: `https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap`,
+          },
+          {
+            name: `Poppins`,
+            file: `https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap`,
+          },
         ],
-        display: 'swap'
-      }
+      },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `Poppins`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-        ],
-        display: 'swap'
-      }
-    }
   ],
 }

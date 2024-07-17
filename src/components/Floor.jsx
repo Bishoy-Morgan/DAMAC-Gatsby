@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import React, { useState } from 'react'
 
 export default function Floor( { formOpen } ) {
@@ -30,11 +30,9 @@ export default function Floor( { formOpen } ) {
             }
         `)
     const floorData = data.allFile.nodes
-    // console.log(floorData)
     const filterData = floorData.map((i) => i.childMarkdownRemark.frontmatter)
     // console.log(filterData)
-    const image = floorData.map((img) => getImage(img.childMarkdownRemark.frontmatter.floorImage))
-    // console.log(image)
+    // const image = floorData.map((img) => getImage(img.childMarkdownRemark.frontmatter.floorImage))
     return (
         <section className='floorPlan w-full h-screen md:mt-0 md:pt-5 '>
             <div className='w-[90%] md:w-4/5 h-full mx-auto flex flex-col justify-start items-center  '>
@@ -74,13 +72,8 @@ export default function Floor( { formOpen } ) {
                     <StaticImage
                         className='w-full md:w-[45%]'
                         src='../Images/unit.png'
-                        alt=''
+                        alt='Floor plan'
                     />
-                    {/* <GatsbyImage
-                        className='w-full md:w-[45%]'
-                        src={image[currentIndex]}
-                        alt=''
-                    /> */}
                     <div className='w-full md:w-1/2 h-[65%] md:h-[95%] flex flex-col justify-evenly items-start '>
                         <h4 className='text-[20px]  md:text-[29px] font-medium text-[#353535]'>{filterData[currentIndex].floorTitle}</h4>
                         <span className='text-[#353535] text-[14px] md:text-base font-medium  '>Type : {filterData[currentIndex].floorType}</span>
@@ -107,10 +100,10 @@ export default function Floor( { formOpen } ) {
                                 href='/sample.pdf'
                                 download
                             >
-                                <button className='w-full h-12 font-bold text-[#FFFFFF] bg-[#00358B] tracking-[3%] text-[13px] rounded-[5px] border-[#00357B] '>GET ALL FLOOR PLANS</button>
+                                <button className='w-full h-12 font-bold text-[#FFFFFF] bg-[#00358B] tracking-wide text-[13px] rounded-[5px] border-[#00357B] '>GET ALL FLOOR PLANS</button>
                             </a>
                             <button 
-                                className='w-3/5 md:w-[48%] h-12 font-bold text-[#00357B] tracking-[8%] text-[13px] rounded-[5px] border-[#00357B] border '
+                                className='w-3/5 md:w-[48%] h-12 font-bold text-[#00357B] tracking-wider text-[13px] rounded-[5px] border-[#00357B] border '
                                 onClick={formOpen}
                             >LEAVE A REQUEST</button>
                         </div>

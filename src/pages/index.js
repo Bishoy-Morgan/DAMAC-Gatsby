@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useState } from 'react'
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+// import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import Layout from '../components/Layout'
 import HeroSection from '../components/HeroSection'
 import Features from '../components/Features'
@@ -24,7 +24,7 @@ export default function Home() {
   return(
     <>
       {openForm && (<Form closeForm={() => setOpenForm(!openForm)}/>)}
-      {openForm ? disableBodyScroll(document) : enableBodyScroll(document)}
+      {/* {openForm ? disableBodyScroll(document) : enableBodyScroll(document)} */}
         <Layout formOpen={() => setOpenForm(!openForm)}>
           <HeroSection formOpen={() => setOpenForm(!openForm)}/>
           <Features />

@@ -59,7 +59,7 @@ export default function Form( { closeForm } ) {
                 </div>
                 <div className='w-4/5 h-1/4 flex flex-col justify-between items-center '>
                     <button 
-                        className='w-3/4 h-[54px] max-w-[301px] rounded-[8px] bg-[#00357B] text-lg text-[#FFFFFF] font-bold tracking-[3%] block  '
+                        className='w-3/4 h-[54px] max-w-[301px] rounded-[8px] bg-[#00357B] text-lg text-[#FFFFFF] font-bold tracking-wide block  '
                         onClick={(e) => handleSubmit(e)}
                     >SUBMIT NOW</button>
                     

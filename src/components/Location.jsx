@@ -28,22 +28,41 @@ export default function Location() {
                     <h4 className='uppercase inline text-[29px] font-medium text-[#FCFCFC]'>Famous Landmarks Nearby</h4>
                     <img 
                         className='inline mb-3 ml-3 rotate-90 md:rotate-0 '
-                        src={arrow} alt='Arrow' />
+                        src={arrow} 
+                        alt='Arrow' 
+                        width={30}
+                        height={30}
+                    />
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
-                    <img src={plane} alt='Plane icon' />
+                    <img 
+                        src={plane} 
+                        alt='Plane icon' 
+                        width={39.5}
+                        height={38}
+                    />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Dubail Airport</span>
-                    <span className='main-title text-[23px] font-bold text-[#FCFCFC]'>25-Minutes</span>
+                    <span className='main-title text-[23px] font-bold text-[#FCFCFC] tracking-wider'>25-Minutes</span>
                 </div>
-                <div className='w-[90%] md:w-[24%] h-[23%] md:h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
-                    <img src={tower} alt='Plane icon' />
+                <div className='w-[90%] md:w-[24%] h-[23%] md:h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
+                    <img 
+                        src={tower} 
+                        alt='Plane icon' 
+                        width={39.5}
+                        height={38}
+                    />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Downtown Dubai</span>
-                    <span className='main-title text-[23px] font-bold text-[#FCFCFC]'>20-Minutes</span>
+                    <span className='main-title text-[23px] font-bold text-[#FCFCFC] tracking-wider'>20-Minutes</span>
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
-                    <img src={marine} alt='Dubai Towers' />
+                    <img 
+                        src={marine} 
+                        alt='Dubai Towers' 
+                        width={39.5}
+                        height={38}
+                    />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Dubai Marina</span>
-                    <span className='main-title text-[23px] font-bold text-[#FCFCFC]'>28-Minutes</span>
+                    <span className='main-title text-[23px] font-bold text-[#FCFCFC] tracking-wider'>28-Minutes</span>
                 </div>
             </div>
         </section>
