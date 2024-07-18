@@ -4,12 +4,14 @@ import damacVedio from '../Images/DAMAC - Google Chrome 2024-06-20 11-32-50.mp4'
 
 export default function Glamour( { formOpen } ) {
     return (
-        <section className='relative w-full h-[1400px] md:h-[1100px] lg:h-[1250px]'>
+        <section className='relative w-full h-[1400px] max-h-[1401px] md:h-[1100px] lg:h-[1250px]'>
             <StaticImage 
                 className='absolute z-10 top-0 w-full h-full'
                 src='../Images/Glamour1.png'
                 alt='Glamour Damac'
-                // layout='fullWidth'
+                layout='fullWidth'
+                height={1400}
+                quality={100}
             />
             <div className='absolute z-40 top-0 left-0 h-full py-5 w-full flex flex-col justify-between items-center'>
                 <div className='w-full md:w-4/5 h-[70%] md:h-1/2 lg:h-2/5 flex flex-col-reverse md:flex-row items-center md:items-start '>
@@ -56,7 +58,7 @@ export default function Glamour( { formOpen } ) {
                     </div>
                     <div className='w-[90%] md:w-1/2 h-[55%] md:min-h-[450px] md:max-h-[500px] md:overflow-scroll lg:overflow-hidden lg:h-4/5 md:px-8 flex flex-col justify-evenly items-start '>
                         <span className='text-base md:text-lg font-medium text-[#17ABFF] uppercase '>DAMAC PRESENTS</span>
-                        <h3 className='main-title text-[31px] md:text-4xl font-medium leading-[47px] uppercase text-[#FCFCFC]  '>Welcome to the Glamour of HARBOUR LIGHTS</h3>
+                        <h3 className='font-["Oswald"] text-[31px] md:text-4xl font-medium leading-[47px] uppercase text-[#FCFCFC]  '>Welcome to the Glamour of HARBOUR LIGHTS</h3>
                         <span className='text-base text-[#FCFCFC] leading-[24px] font-normal '>Here waves, wonder, and love for the sea converge in a stunning 52-storey collection of waterfront apartments.</span>
                         <p className='text-base text-[#FCFCFC] leading-[24px] font-normal '>Harbour Lights, a beacon of luxury and maritime passion, is the epitome of a waterfront dream. Experience the magic of Harbour Lights, where the beauty of the sea merges with residential bliss, offering a lifestyle of tranquility in the heart of a bustling maritime hub.</p>
                         <div className='w-full min-h-36 md:min-h-16 flex flex-col items-start justify-evenly md:flex-row md:justify-between md:items-end '>
@@ -77,22 +79,22 @@ export default function Glamour( { formOpen } ) {
                 </div>
                 <div className='w-[90%] h-[13%] -translate-y-10 xl:-translate-y-8 md:w-4/5 grid grid-cols-2 grid-rows-2 gap-5 md:flex justify-between '>
                     <div className='w-auto md:w-1/5 md:h-full flex flex-col justify-evenly items-start'>
-                        <h3 className='main-title text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>52</h3>
+                        <h3 className='font-["Oswald"] text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>52</h3>
                         <span className='text-sm md:text-base tracking-wide font-normal uppercase text-[#FCFCFC]'>Floors Building</span>
                         <div className='w-[90%] md:w-4/5 h-[6px] md:h-[8px] rounded-full bg-[#D9D9D926] '></div>
                     </div>
                     <div className='w-auto md:w-1/5 md:h-full flex flex-col justify-evenly items-start'>
-                        <h3 className='main-title text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>520</h3>
+                        <h3 className='font-["Oswald"] text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>520</h3>
                         <span className='text-sm md:text-base tracking-wide font-normal uppercase text-[#FCFCFC]'>APARTMENTS</span>
                         <div className='w-[90%] md:w-4/5 h-[6px] md:h-[8px] rounded-full bg-[#D9D9D926] '></div>
                     </div>
                     <div className='w-auto md:w-1/5 md:h-full flex flex-col justify-evenly items-start'>
-                        <h3 className='main-title text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>835</h3>
+                        <h3 className='font-["Oswald"] text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>835</h3>
                         <span className='text-sm md:text-base tracking-wide font-normal uppercase text-[#FCFCFC]'>PARKINGS</span>
                         <div className='w-[90%] md:w-4/5 h-[6px] md:h-[8px] rounded-full bg-[#D9D9D926] '></div>
                     </div>
                     <div className='w-auto xl:w-1/5 md:h-full flex flex-col justify-evenly items-start'>
-                        <h3 className='main-title text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>74-158 m<sup>2</sup></h3>
+                        <h3 className='font-["Oswald"] text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>74-158 m<sup>2</sup></h3>
                         <span className='text-sm md:text-base tracking-wide font-normal uppercase text-[#FCFCFC]'>LIVING AREA</span>
                         <div className='w-[90%] md:w-4/5 h-[6px] md:h-[8px] rounded-full bg-[#D9D9D926] '></div>
                     </div> 

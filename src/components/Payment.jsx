@@ -6,11 +6,11 @@ export default function Payment( { formOpen } ) {
       <section className='w-full h-screen flex justify-center items-center '>
         <div className='payment mx-auto w-[90%] md:w-4/5 h-[90%] rounded-[14px] pl-8 flex justify-between items-center lg:items-end'>
           <div className='w-[90%] lg:w-[55%] h-full px-2 md:px-0 flex flex-col justify-evenly'>
-            <h4 className='main-title font-medium text-[31px] md:text-4xl text-[#FCFCFC] md:pl-5 uppercase '>payment plan</h4>
+            <h4 className='font-["Oswald"] font-medium text-[31px] md:text-4xl text-[#FCFCFC] md:pl-5 uppercase '>payment plan</h4>
             <div className='w-full h-[65%] bg-[#5790BE]/30 md:bg-transparent border rounded-[14px]'>
               <div className='w-full h-[70%] md:h-[55%] flex flex-col md:flex-row'>
                 <div className='w-full h-2/5 md:w-1/2 md:h-full border-b md:border-b-0 md:border-r pl-5 py-1 md:py-5'>
-                  <h5 className='main-title text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC] '>80%</h5>
+                  <h5 className='font-["Oswald"] text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC] '>80%</h5>
                   <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-wide text-[#FCFCFC]'>During the<br/>construction period</span>  
                 </div>
                 <div className='w-full h-3/5 md:w-1/2 md:h-full p-5 '>
@@ -31,7 +31,7 @@ export default function Payment( { formOpen } ) {
                 </div>
               </div>
               <div className='w-full h-[30%] md:h-2/5 border-t pl-5 py-3'>
-                <h5 className='main-title text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC]'>20%</h5>
+                <h5 className='font-["Oswald"] text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC]'>20%</h5>
                 <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-wide text-[#FCFCFC] '>After<br/>completion</span>
               </div>
             </div>

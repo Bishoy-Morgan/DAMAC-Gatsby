@@ -18,6 +18,7 @@ export default function HarbourLights() {
                         childImageSharp {
                         gatsbyImageData(
                             width: 193
+                            height: 193
                         )
                         }
                     }
@@ -41,7 +42,7 @@ export default function HarbourLights() {
                         />
                 </div>
                 <div className='w-full h-1/4 md:w-3/4 text-center  '>
-                    <h3 className='main-title uppercase text-3xl md:text-4xl text-[#00357B] font-medium mb-5'>features & Amenities</h3>
+                    <h3 className='font-["Oswald"] uppercase text-3xl md:text-4xl text-[#00357B] font-medium mb-5'>features & Amenities</h3>
                     <p className='text-base leading-[24px] text-[#343434]'>Harbour Lights beautifully honours maritime voyages while embracing an opulent seafront lifestyle. Its maritime-inspired amenities provide an unmatched seaside experience, offering a life of tranquility and bliss.</p>
                 </div> 
                 <div className='w-full h-1/2 md:h-2/5 lg:h-[45%] grid grid-cols-2 gap-8 md:flex md:justify-between '>

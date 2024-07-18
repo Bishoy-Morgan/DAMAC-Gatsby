@@ -82,11 +82,10 @@ module.exports = {
       options: {
         mode: "async",
         enableListener: true,
-        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
         web: [
           {
             name: `Oswald`,
-            file: `https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap`,
+            file: `https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap`,
           },
           {
             name: `Poppins`,

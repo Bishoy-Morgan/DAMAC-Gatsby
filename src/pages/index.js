@@ -5,10 +5,10 @@ import Layout from '../components/Layout'
 import HeroSection from '../components/HeroSection'
 import Features from '../components/Features'
 import HarbourLights from '../components/HarbourLights'
+import Glamour from '../components/Glamour'
 import Gallery from '../components/Gallery'
 import Gallery2 from '../components/Gallery2';
 import Footer from '../components/Footer'
-import Glamour from '../components/Glamour'
 import Payment from '../components/Payment'
 import Floor from '../components/Floor'
 import Brochure from '../components/Brochure'
@@ -43,3 +43,8 @@ export default function Home() {
     </>
   )
 }
+// export function Header() {
+//   return(
+//     <title>Harbour Lights Damac</title>
+//   )
+// }

@@ -29,7 +29,7 @@ export default function Form( { closeForm } ) {
                         src={close} alt='close button' />
                 </button>
                 <div className='w-4/5 h-[10%] text-center'>
-                    <h3 className='main-title text-[#00357B] text-4xl font-medium'>OFFICIAL SALE HAS STARTED</h3>
+                    <h3 className='font-["Oswald"] text-[#00357B] text-4xl font-medium'>OFFICIAL SALE HAS STARTED</h3>
                 </div>
                 <div className='w-4/5 h-2/5 flex flex-col justify-evenly items-center my-3'>
                     <input 

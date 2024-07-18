@@ -1,8 +1,6 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from "gatsby"
-// import { Carousel } from "flowbite-react";
-
 
 export default function Features() {
     const data = useStaticQuery(graphql`
@@ -44,7 +42,7 @@ export default function Features() {
                                   alt='Feature Image'
                                 />
                                 <span className='text-[12px] md:text-base font-normal mt-3'>{item.childMarkdownRemark.frontmatter.feature}</span>
-                                <span className='main-title text-[25px] md:text-3xl font-medium'>{item.childMarkdownRemark.frontmatter.offer}</span>
+                                <span className='font-["Oswald"] text-[25px] md:text-3xl font-medium'>{item.childMarkdownRemark.frontmatter.offer}</span>
                               </div>
                           </div>
                         )

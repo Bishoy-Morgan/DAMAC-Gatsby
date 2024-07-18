@@ -4,7 +4,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import rightArrow from '../Images/icons/galleryRight.svg'
 import leftArrow from '../Images/icons/galleryLeft.svg'
 import closeBtn from '../Images/icons/close-btn.svg'
-import { disableBodyScroll } from 'body-scroll-lock'
 
 export default function Gallery( { type, setType } ) {
     const [openGallery, setOpenGallery] = useState(false)

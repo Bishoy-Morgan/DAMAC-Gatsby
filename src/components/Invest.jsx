@@ -1,52 +1,45 @@
 import React from 'react'
-import victor1 from '../Images/icons/Invest/Vector1.svg'
-import victor2 from '../Images/icons/Invest/Vector2.svg'
-import victor3 from '../Images/icons/Invest/Vector3.svg'
-import victor4 from '../Images/icons/Invest/Vector4.svg'
-import victorA from '../Images/icons/Invest/VectorA.svg'
-import victorB from '../Images/icons/Invest/VectorB.svg'
-import victorC from '../Images/icons/Invest/VectorC.svg'
-import victorD from '../Images/icons/Invest/VectorD.svg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Invest( { formOpen }) {
     return (
         <section className='w-full h-[850px] lg:h-[650px] bg-[#F1F7FD] flex justify-center items-start md:-translate-y-16'>
             <div className='w-4/5 h-full lg:h-4/5 flex flex-col justify-evenly items-center  '>
-                <h3 className='main-title text-4xl text-[#00357B] font-medium uppercase '>Why Invest in dubai</h3>
+                <h3 className='font-["Oswald"] text-4xl text-[#00357B] font-medium uppercase '>Why Invest in dubai</h3>
                 <div className='w-full h-3/4 lg:h-3/5'>
                     <div className='w-full h-1/2 grid grid-cols-2 lg:flex justify-evenly items-center '>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
-                            <img
+                            <StaticImage
                                 width={46}
                                 height={46}
-                                src={victor1} 
+                                src='../Images/Invest/Vector1.png' 
                                 alt='Invest Feature' 
                             />
                             <span className='text-[#343434] font-medium text-sm lg:text-base '>Residence Visa</span>
                         </div>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
-                            <img
+                            <StaticImage
                                 width={41}
                                 height={48}
-                                src={victor2} 
+                                src='../Images/Invest/Vector2.png'
                                 alt='Invest Feature' 
                             />
                             <span className='text-[#343434] font-medium text-sm lg:text-base '>World-class Education</span>
                         </div>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
-                            <img
+                            <StaticImage
                                 width={52}
                                 height={47}
-                                src={victor3} 
+                                src='../Images/Invest/Vector3.png' 
                                 alt='Invest Feature' 
                             />
                             <span className='text-[#343434] font-medium text-sm lg:text-base text-center'>Stable Economy & Currency</span>
                         </div>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
-                            <img
+                            <StaticImage
                                 width={45}
                                 height={49}
-                                src={victor4} 
+                                src='../Images/Invest/Vector4.png' 
                                 alt='Invest Feature' 
                             />
                             <span className='text-[#343434] font-medium text-sm lg:text-base text-center'>Sustained  Economic Growth</span>
@@ -54,41 +47,41 @@ export default function Invest( { formOpen }) {
                     </div>
                     <div className='w-full h-1/2 grid grid-cols-2 lg:flex justify-evenly'>
                         <div className='w-full px-3 md:px-0 lg:w-[21%] h-full flex flex-col justify-start items-center'>
-                            <img
+                            <StaticImage
                                 width={46}
                                 height={50}
                                 className='my-5'
-                                src={victorA} 
+                                src='../Images/Invest/VectorA.png'
                                 alt='Invest Feature'
                             />
                             <span className='text-[#343434] font-medium text-base text-center'>Ease of Doing Business</span>
                         </div>
                         <div className='w-full px-3 md:px-0 lg:w-[21%] h-full flex flex-col justify-start items-center'>
-                            <img
+                            <StaticImage
                                 width={53}
                                 height={50}
                                 className='my-5'
-                                src={victorB} 
+                                src='../Images/Invest/VectorB.png' 
                                 alt='Invest Feature'
                             />
                             <span className='text-[#343434] font-medium text-base text-center'>0% Tax on Residential Real Estate</span>
                         </div>
                         <div className='w-full px-3 md:px-0 lg:w-[21.5%] h-full flex flex-col justify-start items-center text-[#343434]'>
-                            <img
+                            <StaticImage
                                 width={51}
                                 height={50}
                                 className='my-5 '
-                                src={victorC} 
+                                src='../Images/Invest/VectorC.png' 
                                 alt='Invest Feature'
                             />
                             <span className='text-[#343434] font-medium text-base text-center'>Readily Available  Financing Options</span>
                         </div>
                         <div className='w-full px-3 md:px-0 lg:w-[21%] h-full flex flex-col justify-start items-center '>
-                            <img
+                            <StaticImage
                                 width={50}
                                 height={50}
                                 className='my-5 '
-                                src={victorD}
+                                src='../Images/Invest/VectorD.png'
                                 alt='Invest Feature'
                             />
                             <span className='text-[#343434] font-medium text-base text-center'>High Rental  Returns compared to Major World Cities</span>

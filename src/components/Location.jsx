@@ -8,7 +8,7 @@ export default function Location() {
     return (
         <section className='w-full h-[1300px] md:h-[850px] pt-5 md;pt-0 flex flex-col justify-between md:justify-evenly items-center md:-translate-y-20 pb-8 '>
             <div className='w-[90%] md:w-3/5 h-[18%] flex flex-col justify-evenly items-center '>
-                <h4 className='main-title text-[#004572] text-4xl font-medium uppercase  '>location</h4>
+                <h4 className='font-["Oswald"] text-[#004572] text-4xl font-medium uppercase  '>location</h4>
                 <p className='text-base leading-[24px] text-[#343434] text-center '>Strategically located between Port Rashid and Dubai’s Drydocks World, Dubai Maritime City capitalises on its strengths, bringing together the entire maritime industry and offering residents a dynamic, urban lifestyle. KNOW MORE</p>
             </div>
             <div className='w-[90%] md:w-4/5 h-1/5 md:h-[52%] rounded-[14px]'>
@@ -42,7 +42,7 @@ export default function Location() {
                         height={38}
                     />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Dubail Airport</span>
-                    <span className='main-title text-[23px] font-bold text-[#FCFCFC] tracking-wider'>25-Minutes</span>
+                    <span className='font-["Oswald"] text-[23px] font-bold text-[#FCFCFC] tracking-wider'>25-Minutes</span>
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
                     <img 
@@ -52,7 +52,7 @@ export default function Location() {
                         height={38}
                     />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Downtown Dubai</span>
-                    <span className='main-title text-[23px] font-bold text-[#FCFCFC] tracking-wider'>20-Minutes</span>
+                    <span className='font-["Oswald"] text-[23px] font-bold text-[#FCFCFC] tracking-wider'>20-Minutes</span>
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
                     <img 
@@ -62,7 +62,7 @@ export default function Location() {
                         height={38}
                     />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Dubai Marina</span>
-                    <span className='main-title text-[23px] font-bold text-[#FCFCFC] tracking-wider'>28-Minutes</span>
+                    <span className='font-["Oswald"] text-[23px] font-bold text-[#FCFCFC] tracking-wider'>28-Minutes</span>
                 </div>
             </div>
         </section>
