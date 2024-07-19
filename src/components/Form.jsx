@@ -17,6 +17,7 @@ export default function Form( { closeForm } ) {
         setTimeout(() => {
             window.location='/successSubmit'
         }, 1000)
+        window.scrollY()
     }
     return (
         <section className='fixed w-full h-screen z-50 backdrop-blur-[4px]'>
@@ -62,7 +63,6 @@ export default function Form( { closeForm } ) {
                         className='w-3/4 h-[54px] max-w-[301px] rounded-[8px] bg-[#00357B] text-lg text-[#FFFFFF] font-bold tracking-wide block  '
                         onClick={(e) => handleSubmit(e)}
                     >SUBMIT NOW</button>
-                    
                     <span className='italic text-[11px] md:text-[13px] leading-[20px] underline text-[#B2B2B2] text-center '>By Sumbmitting the data, you agree to the terms of the privacy policy and data return</span>
                 </div>
             </div>

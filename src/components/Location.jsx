@@ -1,15 +1,13 @@
 import React from 'react'
 import arrow from '../Images/icons/rightArrow.svg'
-import plane from '../Images/icons/Plane_icon.svg'
-import tower from '../Images/icons/tower.svg'
-import marine from '../Images/icons/Marina.svg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Location() {
     return (
         <section className='w-full h-[1300px] md:h-[850px] pt-5 md;pt-0 flex flex-col justify-between md:justify-evenly items-center md:-translate-y-20 pb-8 '>
             <div className='w-[90%] md:w-3/5 h-[18%] flex flex-col justify-evenly items-center '>
                 <h4 className='font-["Oswald"] text-[#004572] text-4xl font-medium uppercase  '>location</h4>
-                <p className='text-base leading-[24px] text-[#343434] text-center '>Strategically located between Port Rashid and Dubai’s Drydocks World, Dubai Maritime City capitalises on its strengths, bringing together the entire maritime industry and offering residents a dynamic, urban lifestyle. KNOW MORE</p>
+                <p className='leading-[24px] text-[#343434] text-center '>Strategically located between Port Rashid and Dubai’s Drydocks World, Dubai Maritime City capitalises on its strengths, bringing together the entire maritime industry and offering residents a dynamic, urban lifestyle. KNOW MORE</p>
             </div>
             <div className='w-[90%] md:w-4/5 h-1/5 md:h-[52%] rounded-[14px]'>
                 <iframe 
@@ -35,19 +33,19 @@ export default function Location() {
                     />
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
-                    <img 
-                        src={plane} 
+                    <StaticImage 
+                        src='../Images/Plane_icon.png'
                         alt='Plane icon' 
-                        width={39.5}
-                        height={38}
+                        width={41}
+                        height={40}
                     />
                     <span className='text-sm text-[#FCFCFC] mt-2 '>To Dubail Airport</span>
                     <span className='font-["Oswald"] text-[23px] font-bold text-[#FCFCFC] tracking-wider'>25-Minutes</span>
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
-                    <img 
-                        src={tower} 
-                        alt='Plane icon' 
+                    <StaticImage 
+                        src='../Images/Dubai tower.png' 
+                        alt='Dubai Tower' 
                         width={39.5}
                         height={38}
                     />
@@ -55,9 +53,9 @@ export default function Location() {
                     <span className='font-["Oswald"] text-[23px] font-bold text-[#FCFCFC] tracking-wider'>20-Minutes</span>
                 </div>
                 <div className='w-[90%] md:w-[24%] h-[23%] md:h-full  bg-[#5790BE]/20 rounded-[14px] flex flex-col justify-center items-center '>
-                    <img 
-                        src={marine} 
-                        alt='Dubai Towers' 
+                    <StaticImage 
+                        src='../Images/Marina.png' 
+                        alt='Marina' 
                         width={39.5}
                         height={38}
                     />

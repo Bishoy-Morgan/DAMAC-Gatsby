@@ -7,7 +7,7 @@ export default function Invest( { formOpen }) {
             <div className='w-4/5 h-full lg:h-4/5 flex flex-col justify-evenly items-center  '>
                 <h3 className='font-["Oswald"] text-4xl text-[#00357B] font-medium uppercase '>Why Invest in dubai</h3>
                 <div className='w-full h-3/4 lg:h-3/5'>
-                    <div className='w-full h-1/2 grid grid-cols-2 lg:flex justify-evenly items-center '>
+                    <div className='w-full h-1/2 grid grid-cols-2 lg:flex justify-evenly  text-[rgb(52,52,52)]'>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
                             <StaticImage
                                 width={46}
@@ -15,7 +15,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/Vector1.png' 
                                 alt='Invest Feature' 
                             />
-                            <span className='text-[#343434] font-medium text-sm lg:text-base '>Residence Visa</span>
+                            <span className='font-medium text-sm lg:text-base'>Residence Visa</span>
                         </div>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
                             <StaticImage
@@ -24,7 +24,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/Vector2.png'
                                 alt='Invest Feature' 
                             />
-                            <span className='text-[#343434] font-medium text-sm lg:text-base '>World-class Education</span>
+                            <span className=' font-medium text-sm lg:text-base '>World-class Education</span>
                         </div>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
                             <StaticImage
@@ -33,7 +33,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/Vector3.png' 
                                 alt='Invest Feature' 
                             />
-                            <span className='text-[#343434] font-medium text-sm lg:text-base text-center'>Stable Economy & Currency</span>
+                            <span className='font-medium text-sm lg:text-base text-center'>Stable Economy & Currency</span>
                         </div>
                         <div className='w-full h-full lg:w-[21%] lg:h-full flex flex-col justify-evenly items-center'>
                             <StaticImage
@@ -42,7 +42,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/Vector4.png' 
                                 alt='Invest Feature' 
                             />
-                            <span className='text-[#343434] font-medium text-sm lg:text-base text-center'>Sustained  Economic Growth</span>
+                            <span className='font-medium text-sm lg:text-base text-center'>Sustained  Economic Growth</span>
                         </div>
                     </div>
                     <div className='w-full h-1/2 grid grid-cols-2 lg:flex justify-evenly'>
@@ -54,7 +54,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/VectorA.png'
                                 alt='Invest Feature'
                             />
-                            <span className='text-[#343434] font-medium text-base text-center'>Ease of Doing Business</span>
+                            <span className='font-medium text-center'>Ease of Doing Business</span>
                         </div>
                         <div className='w-full px-3 md:px-0 lg:w-[21%] h-full flex flex-col justify-start items-center'>
                             <StaticImage
@@ -64,7 +64,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/VectorB.png' 
                                 alt='Invest Feature'
                             />
-                            <span className='text-[#343434] font-medium text-base text-center'>0% Tax on Residential Real Estate</span>
+                            <span className='font-medium text-center'>0% Tax on Residential Real Estate</span>
                         </div>
                         <div className='w-full px-3 md:px-0 lg:w-[21.5%] h-full flex flex-col justify-start items-center text-[#343434]'>
                             <StaticImage
@@ -74,7 +74,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/VectorC.png' 
                                 alt='Invest Feature'
                             />
-                            <span className='text-[#343434] font-medium text-base text-center'>Readily Available  Financing Options</span>
+                            <span className='font-medium text-center'>Readily Available  Financing Options</span>
                         </div>
                         <div className='w-full px-3 md:px-0 lg:w-[21%] h-full flex flex-col justify-start items-center '>
                             <StaticImage
@@ -84,7 +84,7 @@ export default function Invest( { formOpen }) {
                                 src='../Images/Invest/VectorD.png'
                                 alt='Invest Feature'
                             />
-                            <span className='text-[#343434] font-medium text-base text-center'>High Rental  Returns compared to Major World Cities</span>
+                            <span className='font-medium text-center'>High Rental  Returns compared to Major World Cities</span>
                         </div>
                     </div>
                 </div>

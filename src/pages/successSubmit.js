@@ -28,9 +28,7 @@ export default function SubmitPage() {
                     alt='Gray feature'
                     width={350}
                     height={370}
-                    
                 />
-                
             </div>
             <div className='z-50 w-[45%] h-[70%] flex flex-col justify-evenly items-center mb-16'>
                 <img src={submitRight} alt='Submit Right' />

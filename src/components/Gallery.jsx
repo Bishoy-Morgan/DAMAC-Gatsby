@@ -70,7 +70,7 @@ export default function Gallery( { type, setType } ) {
                                 alt='close button'
                                 onClick={() => setOpenGallery(!openGallery)} 
                             />
-                            <div className='absolute top-[45%] left-1/2 -translate-x-1/2 w-[93%] h-12 z-40 flex justify-between items-center '>
+                            <div className='absolute top-[45%] left-1/2 -translate-x-1/2 w-[93%] h-12 z-40 flex justify-between '>
                                 <button 
                                     onClick={goToPrevious}
                                 >
@@ -90,8 +90,10 @@ export default function Gallery( { type, setType } ) {
                                     />
                                 </button>
                             </div>
-                            <div className='w-4/5 h-4/5 '>
+                            <div className='w-4/5 h-2/5 md:h-4/5 '>
                                 <GatsbyImage
+                                    height={900}
+                                    width={1300}
                                     className='w-full h-full rounded-[14px]'
                                     image={image[currentIndex]}
                                     alt='Damac Building'
@@ -104,6 +106,8 @@ export default function Gallery( { type, setType } ) {
                         className='w-full h-[73%] cursor-pointer'
                     >
                         <GatsbyImage
+                            height={265}
+                            width={170}
                             className='w-full h-full rounded-[14px]'
                             image={image[0]}
                             alt='Damac Building'
@@ -113,6 +117,8 @@ export default function Gallery( { type, setType } ) {
                     <div className='w-full h-[24%] md:h-1/4 flex justify-between items-center '>
                         <div className='w-[23%] md:w-[24%] h-full'>
                             <GatsbyImage
+                                height={265}
+                                width={170}
                                 className='w-full h-full rounded-[14px]'
                                 image={image[1]}
                                 alt='Damac interiors'
@@ -120,6 +126,8 @@ export default function Gallery( { type, setType } ) {
                         </div>
                         <div className='w-[23%] md:w-[24%] h-full'>
                             <GatsbyImage
+                                height={265}
+                                width={170}
                                 className='w-full h-full rounded-[14px]'
                                 image={image[2]}
                                 alt='Damac interiors'
@@ -127,6 +135,8 @@ export default function Gallery( { type, setType } ) {
                         </div>
                         <div className='w-[23%] md:w-[24%] h-full'>
                             <GatsbyImage
+                                height={265}
+                                width={170}
                                 className='w-full h-full rounded-[14px]'
                                 image={image[3]}
                                 alt='Damac interiors'
@@ -134,6 +144,8 @@ export default function Gallery( { type, setType } ) {
                         </div>
                         <div className='w-[23%] md:w-[24%] h-full'>
                             <GatsbyImage
+                                height={265}
+                                width={170}
                                 className='w-full h-full rounded-[14px]'
                                 image={image[4]}
                                 alt='Damac interiors'

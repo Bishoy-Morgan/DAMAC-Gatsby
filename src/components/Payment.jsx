@@ -13,19 +13,19 @@ export default function Payment( { formOpen } ) {
                   <h5 className='font-["Oswald"] text-[35px] md:text-[42px] font-medium tracking-wide text-[#FCFCFC] '>80%</h5>
                   <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-wide text-[#FCFCFC]'>During the<br/>construction period</span>  
                 </div>
-                <div className='w-full h-3/5 md:w-1/2 md:h-full p-5 '>
+                <div className='w-full h-3/5 md:w-1/2 md:h-full p-5 text-[#FFFFFF] '>
                   <div className='w-full h-full flex flex-col '>
                     <div className='w-full h-1/3 flex justify-start'>
                       <div className='w-[9.7px] h-[10px] md:w-[11px] md:h-[11px] rounded-full bg-[#FFFFFF] mt-1 mr-3'></div>
-                      <span className='w-3/4 text-[#FFFFFF] text-[16px] md:text-[17px] font-semibold leading-[22px] '>20% + 4% DLD* when booking</span>
+                      <span className='w-3/4 text-[16px] md:text-[17px] font-semibold leading-[22px] '>20% + 4% DLD* when booking</span>
                     </div>
                     <div className='w-full h-1/3 flex justify-start'>
                       <div className='w-[9.7px] h-[10px] md:w-[11px] md:h-[11px] rounded-full bg-[#FFFFFF] mt-4 mr-3'></div>
-                      <span className='w-3/4 text-[#FFFFFF] text-[16px] md:text-[17px] font-semibold leading-[22px] mt-3'>10% after 9 months</span>
+                      <span className='w-3/4  text-[16px] md:text-[17px] font-semibold leading-[22px] mt-3'>10% after 9 months</span>
                     </div>
                     <div className='w-full h-2/5 flex justify-start '>
                       <div className='w-[9.7px] h-[10px] md:w-[11px] md:h-[11px] rounded-full bg-[#FFFFFF] mt-3 mr-3'></div>
-                      <span className='w-3/4 text-[#FFFFFF] text-[16px] md:text-[17px] font-semibold leading-[22px] mt-2 '>5 payments of 10% every 6 months</span>
+                      <span className='w-3/4 text-[16px] md:text-[17px] font-semibold leading-[22px] mt-2 '>5 payments of 10% every 6 months</span>
                     </div>
                   </div>
                 </div>
@@ -35,7 +35,7 @@ export default function Payment( { formOpen } ) {
                 <span className='text-[16px] md:text-[20px] font-semibold leading-[25px] tracking-wide text-[#FCFCFC] '>After<br/>completion</span>
               </div>
             </div>
-            <div className='w-full h-[15%] md:h-[12%] flex flex-col lg:flex-row justify-between md:items-start '>
+            <div className='w-full h-[15%] md:h-[12%] flex flex-col lg:flex-row justify-between '>
               <span className='text-[#E0E0E0] text-[13px] pl-1 md:pl-5'>*DLD - Dubai Land Department <br/>4% - registration fee</span>
               <button 
                 className='text-[#FFFFFF] bg-[#17ABFF] font-bold text-[13px] rounded-[5px] uppercase w-[90%] md:w-[248px] h-12 mx-auto md:mx-0'

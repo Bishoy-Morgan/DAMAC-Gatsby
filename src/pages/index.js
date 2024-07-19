@@ -43,8 +43,16 @@ export default function Home() {
     </>
   )
 }
-// export function Header() {
-//   return(
-//     <title>Harbour Lights Damac</title>
-//   )
-// }
+export function Head() {
+  return(
+    <>
+    <html lang="en" />
+    <title>Damac</title>
+    <meta name="description" content='Dubai Seaview apartment buildings' />
+    <meta
+      name="damac:url"
+      content='https://bishoy.scizers.com/'
+    />
+    </>
+  )
+}

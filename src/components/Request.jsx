@@ -23,7 +23,7 @@ export default function Request() {
             <div className='w-[90%] lg:w-[45%] h-1/2 lg:h-4/5 flex flex-col items-start '>
                 <div className='w-full h-1/4 lg:h-1/5 flex flex-col justify-between md:justify-evenly '>
                     <h3 className='font-["Oswald"] text-[#00357B] text-4xl font-medium '>LEAVE A REQUEST</h3>
-                    <span className='text-base font-normal text-[#343434] max-w-[274px]'>to get a unique offer from our consultant.</span>
+                    <span className='text-base text-[#343434] max-w-[274px]'>to get a unique offer from our consultant.</span>
                 </div>
                 <div className='w-full h-1/2 flex flex-col justify-evenly'>
                     <input 
@@ -61,6 +61,8 @@ export default function Request() {
             </div>
             <div className='w-[85%] lg:w-[50%] h-[40%] lg:h-full lg:max-w-[510px] flex justify-center'>
                 <StaticImage
+                    width={500}
+                    height={515}
                     className='w-[300px] h-[300px] lg:w-[500px] lg:h-[515px] ' 
                     src='../Images/SalesmanCo.png'
                     alt='Frame'

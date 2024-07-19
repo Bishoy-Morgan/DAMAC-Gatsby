@@ -8,8 +8,13 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  siteMetadata: {
+    title: `damaac`,
+    description: `Dubai Seaview apartment buildings`,
+    siteUrl: `https://bishoy.scizers.com/`
+  },
   plugins: [    
-    // 'gatsby-plugin-postcss',
+    'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -75,23 +80,6 @@ module.exports = {
         name: `floor`,
         // Path to the directory
         path: `${__dirname}/src/markdown/floor`,
-      },
-    },
-    {
-      resolve: `gatsby-omni-font-loader`,
-      options: {
-        mode: "async",
-        enableListener: true,
-        web: [
-          {
-            name: `Oswald`,
-            file: `https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap`,
-          },
-          {
-            name: `Poppins`,
-            file: `https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap`,
-          },
-        ],
       },
     },
   ],

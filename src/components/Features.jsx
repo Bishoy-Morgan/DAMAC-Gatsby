@@ -17,7 +17,7 @@ export default function Features() {
                     featureImg {
                       childImageSharp {
                         gatsbyImageData(
-                          width: 50
+                          width: 52
                         )
                       }
                     }
@@ -31,24 +31,24 @@ export default function Features() {
     return (
         <div className='w-full h-52 lg:h-48 bg-[#F4F9FF] flex justify-center items-center'>
             <div className='w-full md:w-3/4 overflow-x-auto h-full flex flex-col justify-center md:pt-5'>
-                <div className='h-[140px] w-full flex justify-around items-center'>
+                <div className='h-[140px] w-full flex justify-around '>
                     {featuresData.map((item, key) => {
                         const image = getImage(item.childMarkdownRemark.frontmatter.featureImg)
                         return (
                           <div className='h-full'>
-                              <div key={key} className='w-[173px] lg:w-[150px] h-full flex flex-col items-center justify-center text-[#00357B] uppercase '>
+                              <div key={key} className='w-[173px] lg:w-[150px] h-full flex flex-col justify-center items-center text-[#00357B] uppercase '>
                                 <GatsbyImage
                                   image={image}
                                   alt='Feature Image'
                                 />
-                                <span className='text-[12px] md:text-base font-normal mt-3'>{item.childMarkdownRemark.frontmatter.feature}</span>
+                                <span className='text-xs md:text-base mt-3'>{item.childMarkdownRemark.frontmatter.feature}</span>
                                 <span className='font-["Oswald"] text-[25px] md:text-3xl font-medium'>{item.childMarkdownRemark.frontmatter.offer}</span>
                               </div>
                           </div>
                         )
                     })}
                 </div>
-                <div className='w-[700px] md:w-full h-[10%] flex justify-around items-center'>
+                <div className='w-[700px] md:w-full h-[10%] flex justify-around '>
                     <div className='w-[73px] h-[5px] bg-[#00357B] opacity-[12%] rounded-[13px]'></div>
                     <div className='w-[73px] h-[5px] bg-[#00357B] opacity-[12%] rounded-[13px]'></div>
                     <div className='w-[73px] h-[5px] bg-[#00357B] opacity-[12%] rounded-[13px]'></div>
