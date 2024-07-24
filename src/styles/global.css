@@ -13,7 +13,7 @@ body {
     position: relative;
 }
 
-.main-section::after {
+/* .main-section::after {
     position: absolute;
     content: '';
     top: 0;
@@ -22,7 +22,7 @@ body {
     height: 100%;
     background: linear-gradient(to right, rgba(6, 35, 73, 0.64), rgba(24, 141, 249, 0));
     z-index: 30;
-}
+} */
 
 @media only screen and (max-width: 680px) {
     .main-section::after{

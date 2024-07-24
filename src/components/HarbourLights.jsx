@@ -31,7 +31,7 @@ export default function HarbourLights() {
         let amenitiesData = data.allFile.nodes
     return (
         <>
-            <section className='w-4/5 h-[850px] md:h-[600px] lg:h-[650px] mx-auto  flex flex-col justify-between items-center'>
+            <section className='w-4/5 max-w-[1920px] h-[850px] md:h-[600px] lg:h-[650px] mx-auto  flex flex-col justify-between items-center'>
                 <div className='mt-8 h-[10%] md:h-[12%]  '>
                     <StaticImage
                         className='max-w-[165] max-h-[70px] md:max-w-[180] md:max-h-[77px] '
@@ -43,13 +43,13 @@ export default function HarbourLights() {
                 </div>
                 <div className='w-full h-1/4 md:w-3/4 text-center  '>
                     <h3 className='font-["Oswald"] uppercase text-3xl md:text-4xl text-[#00357B] font-medium mb-5'>features & Amenities</h3>
-                    <p className='leading-[24px] text-[#343434]'>Harbour Lights beautifully honours maritime voyages while embracing an opulent seafront lifestyle. Its maritime-inspired amenities provide an unmatched seaside experience, offering a life of tranquility and bliss.</p>
+                    <p className='leading-[24px] text-[#343434] max-w-[777px] mx-auto'>Harbour Lights beautifully honours maritime voyages while embracing an opulent seafront lifestyle. Its maritime-inspired amenities provide an unmatched seaside experience, offering a life of tranquility and bliss.</p>
                 </div> 
-                <div className='w-full h-1/2 md:h-2/5 lg:h-[45%] grid grid-cols-2 gap-8 md:flex md:justify-between '>
+                <div className='w-full 2xl:w-4/5 h-1/2 md:h-2/5 lg:h-[45%] grid grid-cols-2 gap-8 md:flex md:justify-center '>
                     {amenitiesData.map((item, key) => {
                         const image = getImage(item.childMarkdownRemark.frontmatter.ameniteImage)
                         return (
-                            <div key={key} className='relative pt-2 flex flex-col justify-start items-center'>   
+                            <div key={key} className='relative pt-2 flex flex-col justify-start items-center mx-[30px]'>   
                                     <GatsbyImage
                                         className='z-30 '
                                         image={image}

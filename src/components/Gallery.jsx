@@ -42,8 +42,8 @@ export default function Gallery( { type, setType } ) {
         setCurrentIndex(newIndex)
     }  
     return (
-        <section className='overflow-hidden w-full h-[480px] md:h-[600px] lg:h-[700px] 2xl:h-[800px] flex flex-col justify-evenly items-center lg:mb-10 '>
-            <div className='w-4/5 h-[15%] xl:h-[10%] flex justify-center items-center md:justify-end'>
+        <section className='overflow-hidden w-full h-[480px] md:h-[600px] lg:h-[700px] 2xl:h-[10npm run build50px] flex flex-col justify-evenly items-center lg:mb-10 '>
+            <div className='w-4/5 max-w-[1920px] h-[15%] xl:h-[10%] flex justify-center items-center md:justify-end'>
                 <button 
                 onClick={() => setType('exterior')}
                 className='w-40 h-12 font-bold text-[13px] border-[#00357B] border text-[#00357B] hover:bg-[#00357B] hover:text-[#FCFCFC] rounded-[5px] mr-3'>EXTERIORS</button>
@@ -51,16 +51,20 @@ export default function Gallery( { type, setType } ) {
                 onClick={() => setType('interior')}
                 className='w-40 h-12 font-bold text-[13px] border-[#00357B] border text-[#00357B] rounded-[5px] focus:bg-[#00357B] focus:text-[#FCFCFC] '>INTERIORS</button>
             </div>
-                <div className='relative w-[98%] lg:w-4/5 h-[70%] lg:h-4/5 2xl:h-[85%] max-h-[500px] md:max-h-[600px] lg:max-h-[700px] 2xl:max-h-none flex flex-col justify-between '>
+                <div className='relative w-[98%] max-w-[1920px] lg:w-4/5 h-[70%] lg:h-4/5 2xl:h-[85%] max-h-[500px] md:max-h-[600px] lg:max-h-[700px] 2xl:max-h-none flex flex-col justify-between '>
                     <div className='absolute top-1/3 left-4 w-[98%] h-12 z-40 flex justify-between items-center '>
-                        <div>
+                        <button
+                            onClick={goToPrevious}
+                        >
                             <img src={leftArrow}
                             alt='Arrow' />
-                        </div>
-                        <div>
+                        </button>
+                        <button
+                            onClick={goToNext}
+                        >
                             <img src={rightArrow}
                             alt='Arrow' />
-                        </div>
+                        </button>
                     </div>
                     {openGallery && (
                         <section className='fixed top-0 left-0 z-50 w-full h-full bg-black/90 flex justify-center items-center'>

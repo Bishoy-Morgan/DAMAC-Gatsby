@@ -4,7 +4,7 @@ import damacVedio from '../Images/DAMAC - Google Chrome 2024-06-20 11-32-50.mp4'
 
 export default function Glamour( { formOpen } ) {
     return (
-        <section className='relative w-full h-[1400px] max-h-[1401px] md:h-[1100px] lg:h-[1250px]'>
+        <section className='relative w-full h-[1400px] max-h-[1401px] md:h-[1100px] lg:h-[1250px] 2xl:h-[1350px]'>
             <StaticImage 
                 className='absolute z-10 top-0 w-full h-full'
                 src='../Images/Glamour1.png'
@@ -14,7 +14,7 @@ export default function Glamour( { formOpen } ) {
                 height={1400}
                 quality={100}
             />
-            <div className='absolute z-40 top-0 left-0 h-full py-5 w-full flex flex-col justify-evenly items-center'>
+            <div className='absolute max-w-[1920px] z-40 top-0 left-1/2 -translate-x-1/2 h-full py-5 w-full flex flex-col justify-evenly items-center'>
                 <div className='w-full md:w-4/5 h-[70%] md:h-1/2 lg:h-2/5 flex flex-col-reverse md:flex-row items-center md:items-start '>
                     <div className='w-[90%] md:w-1/2 h-[45%] lg:h-full '>
                         <div className='w-[90%] lg:h-[90%] md:w-4/5 '>
@@ -78,7 +78,7 @@ export default function Glamour( { formOpen } ) {
                         </div>
                     </div>
                 </div>
-                <div className='w-[90%] h-[13%] -translate-y-10 xl:-translate-y-8 md:w-4/5 grid grid-cols-2 grid-rows-2 gap-5 md:flex justify-between '>
+                <div className='w-[90%] h-[13%] -translate-y-10 xl:-translate-y-10 2xl:translate-y-0 md:w-4/5 grid grid-cols-2 grid-rows-2 gap-5 md:flex justify-between '>
                     <div className='w-auto md:w-1/5 md:h-full flex flex-col justify-evenly '>
                         <h3 className='font-["Oswald"] text-[35px] md:text-5xl text-[#FCFCFC] font-medium '>52</h3>
                         <span className='text-sm md:text-base tracking-wide  uppercase text-[#FCFCFC]'>Floors Building</span>
@@ -100,8 +100,8 @@ export default function Glamour( { formOpen } ) {
                         <div className='w-[90%] md:w-4/5 h-[6px] md:h-[8px] rounded-full bg-[#D9D9D926] '></div>
                     </div> 
                 </div>
-                <div className='w-[90%] h-[225px] md:w-[65%] md:h-1/4 lg:h-[475px] rounded-[14px]'>
-                    <video className='w-full h-full rounded-[14px]' controls>
+                <div className='w-[90%] h-[225px] md:w-[65%] md:h-1/4 lg:h-[475px] rounded-[14px] overflow-hidden'>
+                    <video className='w-full h-full rounded-[14px]' controls >
                         <source src={damacVedio} type="video/mp4" />
                     </video>
                 </div>

@@ -1,13 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
 
-const Layout = ( { children, formOpen } ) => {
+const Layout = ( { children  } ) => {
     return (
-        <div>
-            <Navbar formOpen={formOpen}/>
-            <div>
-                { children }
-            </div>
+        <div className='mx-auto '>
+            { children }
         </div>
     )
 }

@@ -3,8 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 export default function Invest( { formOpen }) {
     return (
-        <section className='w-full h-[850px] lg:h-[650px] bg-[#F1F7FD] flex justify-center items-start md:-translate-y-16'>
-            <div className='w-4/5 h-full lg:h-4/5 flex flex-col justify-evenly items-center  '>
+        <section className='w-full h-[850px] lg:h-[650px] 2xl:h-[950px] bg-[#F1F7FD] flex justify-center items-start md:-translate-y-16'>
+            <div className='w-4/5 max-w-[1920px] h-full lg:h-4/5 flex flex-col justify-evenly items-center  '>
                 <h3 className='font-["Oswald"] text-4xl text-[#00357B] font-medium uppercase '>Why Invest in dubai</h3>
                 <div className='w-full h-3/4 lg:h-3/5'>
                     <div className='w-full h-1/2 grid grid-cols-2 lg:flex justify-evenly  text-[rgb(52,52,52)]'>

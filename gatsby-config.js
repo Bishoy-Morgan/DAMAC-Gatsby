@@ -23,18 +23,18 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
-        name: `o`,
+        name: `offer`,
         // Path to the directory
-        path: `${__dirname}/src/markdown/o`,
+        path: `${__dirname}/src/markdown/offer`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
-        name: `f`,
+        name: `feature`,
         // Path to the directory
-        path: `${__dirname}/src/markdown/f`,
+        path: `${__dirname}/src/markdown/feature`,
       },
     },
     {
@@ -62,6 +62,15 @@ module.exports = {
         name: `gallery`,
         // Path to the directory
         path: `${__dirname}/src/markdown/gallery`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `heroSectionImg`,
+        // Path to the directory
+        path: `${__dirname}/src/markdown/heroSectionImg`,
       },
     },
     {

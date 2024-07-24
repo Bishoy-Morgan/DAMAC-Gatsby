@@ -19,7 +19,7 @@ export default function Request() {
         }, 1000)
     }
     return (
-        <section className='w-full h-[800px] lg:h-[550px] md:w-4/5 bg-[#FDFDFD] mx-auto lg:px-5 mt-10 lg:mt-0 md:-translate-y-40 flex flex-col lg:flex-row justify-between items-center'>
+        <section className='w-full max-w-[1920px]  h-[800px] lg:h-[550px] 2xl:h-[1000px] md:w-4/5 bg-[#FDFDFD] mx-auto lg:px-5 mt-10 lg:mt-0 md:-translate-y-40 flex flex-col lg:flex-row justify-between items-center'>
             <div className='w-[90%] lg:w-[45%] h-1/2 lg:h-4/5 flex flex-col items-start '>
                 <div className='w-full h-1/4 lg:h-1/5 flex flex-col justify-between md:justify-evenly '>
                     <h3 className='font-["Oswald"] text-[#00357B] text-4xl font-medium '>LEAVE A REQUEST</h3>

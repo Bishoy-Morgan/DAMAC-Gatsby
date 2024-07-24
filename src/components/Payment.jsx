@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function Payment( { formOpen } ) {
     return (
-      <section className='w-full h-screen flex justify-center items-center '>
-        <div className='payment mx-auto w-[90%] md:w-4/5 h-[90%] rounded-[14px] pl-8 flex justify-between items-center lg:items-end'>
+      <section className='w-full h-screen 2xl:max-h-[1050px] flex justify-center items-center '>
+        <div className='payment mx-auto w-[90%] max-w-[1920px] md:w-4/5 h-[90%] rounded-[14px] pl-8 flex justify-between items-center lg:items-end'>
           <div className='w-[90%] lg:w-[55%] h-full px-2 md:px-0 flex flex-col justify-evenly'>
             <h4 className='font-["Oswald"] font-medium text-[31px] md:text-4xl text-[#FCFCFC] md:pl-5 uppercase '>payment plan</h4>
             <div className='w-full h-[65%] bg-[#5790BE]/30 md:bg-transparent border rounded-[14px]'>
@@ -44,13 +44,13 @@ export default function Payment( { formOpen } ) {
             
             </div>
           </div>
-          <div className='hidden lg:block lg:w-[45%] lg:h-4/5 '>
+          <div className='hidden lg:flex lg:justify-end lg:w-[40%] lg:h-[90%]'>
             <StaticImage
-              className='lg:h-full lg:w-full rounded-br-[14px] '
+              className='rounded-br-[14px] '
               src='../Images/payment.png'
               alt='Visa Card'
-              width={450}
-              height={400}
+              width={550}
+              height={528}
             />
           </div>
         </div>
